@@ -209,7 +209,7 @@ const BingoBoard: React.FC<Props> = ({ userName, roomName, opponentName }) => {
     }
 
     function onGameStart() {
-      alert("Game started")
+      // alert("Game started")
       setIsWaiting(false)
       setIsStarted(true)
       const randomNumber = Math.floor(Math.random() * 10) + 1
@@ -327,7 +327,7 @@ const BingoBoard: React.FC<Props> = ({ userName, roomName, opponentName }) => {
   },[])
 
   return (
-    <Card className="w-full max-w-sm mx-auto p-3 space-y-3 bg-white/80 backdrop-blur-sm shadow-xl">
+    <Card className="w-full mt-20 md:mt-0 max-w-sm mx-auto p-3 space-y-3 bg-white/80 backdrop-blur-sm shadow-xl">
       <div className="">
         <div className="flex items-center gap-1 justify-center">
           
@@ -425,7 +425,7 @@ const BingoBoard: React.FC<Props> = ({ userName, roomName, opponentName }) => {
         <div>
           <Button
             onClick={handleStart}
-            disabled={!isComplete || !opponentName}
+            disabled={!isComplete || !opponentName || winnerIs!==""}
             className={`w-full font-bold py-2 px-4 rounded-full shadow-md transition-all duration-200 ease-in-out transform hover:scale-105 ${isComplete
               ? "bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600 text-white"
               : "bg-gray-300 text-gray-500 cursor-not-allowed"

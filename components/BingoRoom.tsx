@@ -44,7 +44,7 @@ function BingoRoom() {
   }
 
   return (
-    <div>
+    <div className="flex items-center justify-center h-screen">
       <Card className="min-w-[400px]">
         <CardHeader>
           <CardTitle className="text-center bg-gradient-to-r from-cyan-500 via-purple-500 to-blue-500 text-transparent bg-clip-text text-2xl">
