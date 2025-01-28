@@ -2,9 +2,9 @@
 
 ## Overview
 
-- This is Bingo game which is two player game
-- You can play this with game with your freind 
-- Experienced smooth and userfreindly UI
+- This is a Bingo game designed for two players.
+- Enjoy playing with your friend for a fun and engaging experience.
+- Features a smooth, intuitive, and user-friendly interface for seamless gameplay.
 
 ## Tech Stack
 - Socket.IO
