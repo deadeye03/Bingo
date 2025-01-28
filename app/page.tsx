@@ -1,5 +1,4 @@
 import Background from "@/components/Background";
-import BingoBoard from "@/components/BingoBoard";
 import BingoRoom from "@/components/BingoRoom";
 
 
